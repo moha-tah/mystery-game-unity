@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 5946ca384da6940e4bd2e8e658a218e7
+  productGUID: 7c498c8d266266b4dbc82e445adbb71c
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -744,10 +744,7 @@ PlayerSettings:
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding: []
-  m_BuildTargetDefaultTextureCompressionFormat:
-  - serializedVersion: 3
-    m_BuildTarget: WebGL
-    m_Formats: 05000000
+  m_BuildTargetDefaultTextureCompressionFormat: []
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
@@ -1061,14 +1058,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Mystery
+  metroPackageName: mystery-game-unity
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Mystery
+  metroApplicationDescription: mystery-game-unity
   wsaImages: {}
   metroTileShortName: UniteEurope16
   metroTileShowName: 0
@@ -1152,7 +1149,7 @@ PlayerSettings:
   cloudProjectId: 553726e4-79b8-4a22-b695-28d921d0744e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Mystery
+  projectName: 
   organizationId: discreetmomo
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
