@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 4294adc4e8d44870aa91a756d5598d2b
+timeCreated: 1682596250
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Script/ChatManager/GPT/Model/ChatCompletionResponse.cs
+  uploadId: 584535

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0c1cdcf4452b4e6c8477f00b77415f3a
+timeCreated: 1682596197
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Script/ChatManager/GPT/Model/Choice.cs
+  uploadId: 584535

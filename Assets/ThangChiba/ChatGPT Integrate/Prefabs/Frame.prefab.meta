@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ddc63e5ad579f401e901e61bb0d9197c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Prefabs/Frame.prefab
+  uploadId: 584535

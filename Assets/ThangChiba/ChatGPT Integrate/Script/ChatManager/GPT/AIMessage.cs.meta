@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: a679bbd503b749a5b99674a18628abb0
+timeCreated: 1679762398
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Script/ChatManager/GPT/AIMessage.cs
+  uploadId: 584535

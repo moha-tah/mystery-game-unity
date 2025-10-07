@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 871c04ff97df48728f9ed9586769f1b3
+timeCreated: 1681323419
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Script/ChatSender/IChatHandler.cs
+  uploadId: 584535

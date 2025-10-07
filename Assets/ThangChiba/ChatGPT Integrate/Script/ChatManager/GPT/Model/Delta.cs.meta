@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 728cb75d8839409b98e95d925eedc957
+timeCreated: 1682596220
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Script/ChatManager/GPT/Model/Delta.cs
+  uploadId: 584535

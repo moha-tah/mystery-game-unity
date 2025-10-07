@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: de5ad6e0343d4441a323617090359082
+timeCreated: 1680015879
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Script/ChatMode/State/GlobalState.cs
+  uploadId: 584535

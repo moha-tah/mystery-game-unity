@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4e4b5a610a96b4de8b344b02557fb501
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Storage/GUIStorage.asset
+  uploadId: 584535

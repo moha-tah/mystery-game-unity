@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 4f4332ddb64d47faab788f5bda2b2d6a
+timeCreated: 1680024986
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254880
+  packageName: ChatGPT Integrate
+  packageVersion: 1.0.0
+  assetPath: Assets/ThangChiba/ChatGPT Integrate/Script/ChatManager/GPT/AIRequestBody.cs
+  uploadId: 584535
