@@ -1,14 +1,3 @@
-/**
- * *********************************************************************
- * © 2023 ThangChiba. All rights reserved.
- * 
- * This code is licensed under the MIT License.
- * 
- * Homepage: https://thangchiba.com
- * Email: thangchiba@gmail.com
- * *********************************************************************
- */
-
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,10 +16,12 @@ namespace ThangChibaGPT
         [Range(0, 10)]
         public int maxSendCount = 6;
 
-        [Tooltip("It is randomless value of ai.")] [Range(0f, 2f)]
+        [Tooltip("It is randomless value of ai.")]
+        [Range(0f, 2f)]
         public float temperature = 0.7f;
 
-        [Tooltip("It is max token that ai can generate.")] [Range(10, 4000)]
+        [Tooltip("It is max token that ai can generate.")]
+        [Range(10, 4000)]
         public int maxTokens = 100;
 
         public List<AIMessage> trains;
