@@ -14,7 +14,7 @@ namespace ThangChibaGPT
         {
             AddMessage(Role.user, content);
             frameChat.AddChatMessage(content, "user");
-            chunkMessage = frameChat.AddChatMessage("", "assistant");
+            chunkMessage = frameChat.AddChatMessage("[Réponse de test]", "assistant");
         }
 
         public override void OnReceiveChunkResponse(string content)
@@ -26,7 +26,6 @@ namespace ThangChibaGPT
 
         private void ScrollToBottom()
         {
-            // Set the vertical normalized position to 0
             scrollRect.verticalNormalizedPosition = 0f;
         }
     }

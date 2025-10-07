@@ -20,15 +20,9 @@ namespace ThangChibaGPT
         [SerializeField]
         [Tooltip(
             "The Access APIKey you need get from openai homepage.\n" +
-            "URL : https://platform.openai.com/account/api-key\n\n" +
+            "URL : https://platform.openai.com/api-keys\n\n" +
             "If you are using my endpoint(thangchiba) you dont need setup access token.")]
         private string accessToken = "Bearer sk-";
-
-        [SerializeField]
-        [Tooltip(
-            "If you are using openai api access token. You dont need care about this field.\n" +
-            "If you are using my endpoint(thangchiba) you need enter freetoken or token i provided.")]
-        private string accessKey = "freetoken";
 
         [SerializeField]
         [Tooltip(
@@ -69,7 +63,6 @@ namespace ThangChibaGPT
                 request.downloadHandler = downloadHandler;
                 request.SetRequestHeader("Content-Type", "application/json");
                 request.SetRequestHeader("Authorization", accessToken);
-                // request.SetRequestHeader("AccessKey", accessKey);
                 yield return request.SendWebRequest();
                 if (request.result != UnityWebRequest.Result.Success) Debug.Log(request.error);
             }
