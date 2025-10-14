@@ -27,6 +27,9 @@ namespace ThangChibaGPT
         public List<AIMessage> trains;
         public List<AIMessage> messages;
 
+        public string displayName;
+        public Sprite avatar;
+
         public void OnEnable()
         {
             if (clearHistoryOnStart) messages = new List<AIMessage>();

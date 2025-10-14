@@ -2701,9 +2701,10 @@ GameObject:
   - component: {fileID: 195000013459137288}
   - component: {fileID: 114000014294072012}
   - component: {fileID: 114000014274399210}
+  - component: {fileID: 159474510950917804}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2806,6 +2807,29 @@ MonoBehaviour:
   uniqueIdentifier: DisguiseOnFaceActivity
   saveData: {fileID: 11400000, guid: 55d72825bf06cf44e9cbc1b37812cc6f, type: 2}
   gameObjectToSave: {fileID: 1000011958607958}
+--- !u!136 &159474510950917804
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000014019507428}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.34340096
+  m_Height: 1.9551551
+  m_Direction: 1
+  m_Center: {x: 0.006263733, y: 0.95397794, z: 0}
 --- !u!1 &1000014050281458
 GameObject:
   m_ObjectHideFlags: 0

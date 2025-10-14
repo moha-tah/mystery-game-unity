@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace ThangChibaGPT
 
 {
@@ -13,6 +15,14 @@ namespace ThangChibaGPT
         public override void OnReceiveChunkResponse(string content)
         {
             barkController.SetBark(content);
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "Player")
+            {
+                Debug.Log("OnTriggerEnter: " + other.name + " with tag " + other.tag);
+            }
         }
     }
 }
