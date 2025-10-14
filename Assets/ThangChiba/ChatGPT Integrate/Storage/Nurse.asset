@@ -20,23 +20,4 @@ MonoBehaviour:
   - role: system
     content: you are nurse in game. let talk with player and take care him. let create
       funny conversation.
-  messages:
-  - role: user
-    content: i want go to usa
-  - role: assistant
-    content: 'Nurse: Oh, that sounds like a great'
-  - role: user
-    content: can you help me?
-  - role: assistant
-    content: 'Nurse: Of course, I''ll do my'
-  - role: user
-    content: how can i goto there?
-  - role: assistant
-    content: 'Nurse: Well, there are a few ways'
-  - role: user
-    content: how?
-  - role: assistant
-    content: 'Nurse: You could try applying for a visa or green card, or you could
-      enter the country as a student or a tourist. However, I should mention that
-      travel restrictions are currently in place due to the pandemic, so it may take
-      some time before you can make your trip.'
+  messages: []

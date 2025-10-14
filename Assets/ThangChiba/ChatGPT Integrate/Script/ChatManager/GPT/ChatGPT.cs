@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using UnityEngine;
@@ -22,7 +23,18 @@ namespace ThangChibaGPT
             "The Access APIKey you need get from openai homepage.\n" +
             "URL : https://platform.openai.com/api-keys\n\n" +
             "If you are using my endpoint(thangchiba) you dont need setup access token.")]
-        private string accessToken = "Bearer sk-";
+        private string accessToken => GetEnvValue("ACCESS_TOKEN");
+
+        private static string GetEnvValue(string key)
+        {
+            if (!File.Exists(".env")) return null;
+            foreach (var line in File.ReadAllLines(".env"))
+            {
+                if (line.StartsWith(key + "="))
+                    return line.Split('=')[1];
+            }
+            return null;
+        }
 
         [SerializeField]
         [Tooltip(
@@ -46,6 +58,13 @@ namespace ThangChibaGPT
             var sendMessages = new List<AIMessage>(controller.chatStorage.trains);
             sendMessages.AddRange(
                 controller.chatStorage.messages.TakeLast(controller.chatStorage.maxSendCount).ToList());
+
+            foreach (var message in sendMessages)
+            {
+                Debug.Log(message.role + ": " + message.content);
+            }
+            // yield return new WaitForSeconds(1);
+
             var requestBody = new AIRequestBody
             {
                 model = GetModelName(egptModel),

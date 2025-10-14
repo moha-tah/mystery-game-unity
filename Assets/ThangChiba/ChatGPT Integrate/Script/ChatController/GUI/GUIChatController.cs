@@ -14,7 +14,7 @@ namespace ThangChibaGPT
         {
             AddMessage(Role.user, content);
             frameChat.AddChatMessage(content, "user");
-            chunkMessage = frameChat.AddChatMessage("[Réponse de test]", "assistant");
+            chunkMessage = frameChat.AddChatMessage("Réflexion en cours...", "assistant");
         }
 
         public override void OnReceiveChunkResponse(string content)

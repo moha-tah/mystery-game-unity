@@ -25,6 +25,7 @@ namespace ThangChibaGPT
 
         public override void SubmitChat(string content)
         {
+            Debug.Log("SubmitChat: " + content);
             ChatManager.Instance.ChatGPT.Send(content, guiChatController);
         }
     }

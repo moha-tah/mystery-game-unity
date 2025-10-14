@@ -2882,6 +2882,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4000014075113472}
     m_Modifications:
+    - target: {fileID: 394656507090999659, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 394656507090999660, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 394656507337532546, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 394656507337532546, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 394656507337532546, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 394656507337532546, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 394656507337532546, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 394656507337532548, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 394656507834726357, guid: 72d0c56c0030e47c79037a3ef71f367c,
         type: 3}
       propertyPath: m_Name
@@ -2935,6 +2975,11 @@ PrefabInstance:
     - target: {fileID: 394656507834726358, guid: 72d0c56c0030e47c79037a3ef71f367c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 394656507834726359, guid: 72d0c56c0030e47c79037a3ef71f367c,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

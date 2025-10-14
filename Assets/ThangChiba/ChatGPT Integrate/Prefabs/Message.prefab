@@ -31,7 +31,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2679869446230407477}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -112,7 +111,6 @@ RectTransform:
   - {fileID: 2679869446008515217}
   - {fileID: 2050528751000797948}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -209,8 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e482245393ab4069974ad2d93c042c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avatarUser: {fileID: 21300000, guid: c887ed2a931c29040bc544cd8c546e9f, type: 3}
-  avatarAssistant: {fileID: 21300000, guid: 3042b019b052942a1baf7aa49d7ca6bb, type: 3}
+  avatarUser: {fileID: 21300002, guid: 4944c65a03c70b54a9c2b020aaaae283, type: 3}
+  avatarAssistant: {fileID: 21300000, guid: 0d6887c5e31a67d4c9c3988379769ec4, type: 3}
   showAvatar: {fileID: 2679869446008515216}
   content: {fileID: 2050528751000797949}
 --- !u!1 &2679869446783347227
@@ -245,7 +243,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2679869446230407477}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -323,15 +320,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
