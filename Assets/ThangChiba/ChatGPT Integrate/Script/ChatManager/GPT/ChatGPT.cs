@@ -59,12 +59,6 @@ namespace ThangChibaGPT
             sendMessages.AddRange(
                 controller.chatStorage.messages.TakeLast(controller.chatStorage.maxSendCount).ToList());
 
-            foreach (var message in sendMessages)
-            {
-                Debug.Log(message.role + ": " + message.content);
-            }
-            // yield return new WaitForSeconds(1);
-
             var requestBody = new AIRequestBody
             {
                 model = GetModelName(egptModel),

@@ -13,13 +13,13 @@ namespace ThangChibaGPT
         public override void OnSubmitChat(string content)
         {
             AddMessage(Role.user, content);
-            frameChat.AddChatMessage(content, "user");
-            chunkMessage = frameChat.AddChatMessage("Réflexion en cours...", "assistant");
+            frameChat.AddChatMessage("Vous : " + content, "user", null);
+            chunkMessage = frameChat.AddChatMessage("Réflexion en cours...", "assistant", chatStorage.avatar);
         }
 
         public override void OnReceiveChunkResponse(string content)
         {
-            chunkMessage.SetContent(content);
+            chunkMessage.SetContent(chatStorage.displayName + " : " + content);
             ScrollToBottom();
         }
 

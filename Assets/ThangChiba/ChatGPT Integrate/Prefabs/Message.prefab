@@ -207,8 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e482245393ab4069974ad2d93c042c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avatarUser: {fileID: 21300002, guid: 4944c65a03c70b54a9c2b020aaaae283, type: 3}
-  avatarAssistant: {fileID: 21300000, guid: 0d6887c5e31a67d4c9c3988379769ec4, type: 3}
+  avatarUser: {fileID: 21300000, guid: b719eec587657491191721d38147c161, type: 3}
   showAvatar: {fileID: 2679869446008515216}
   content: {fileID: 2050528751000797949}
 --- !u!1 &2679869446783347227
@@ -244,9 +243,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2679869446230407477}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -40}
   m_SizeDelta: {x: 445, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &2050528751000797946
@@ -326,7 +325,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1

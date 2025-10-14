@@ -6,13 +6,13 @@ namespace ThangChibaGPT
     {
         [SerializeField] private GameObject messagePrefab;
 
-        public Message AddChatMessage(string content, string role)
+        public Message AddChatMessage(string content, string role, Sprite avatar)
         {
             var newMessage = Instantiate(messagePrefab, gameObject.transform);
 
             var message = newMessage.GetComponent<Message>();
             message.SetContent(content);
-            message.SetAvatar(role);
+            message.SetAvatar(avatar);
             return newMessage.GetComponent<Message>();
         }
     }

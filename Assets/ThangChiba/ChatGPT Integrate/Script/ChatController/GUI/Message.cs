@@ -7,7 +7,7 @@ namespace ThangChibaGPT
     public class Message : MonoBehaviour
     {
         [SerializeField] public Sprite avatarUser;
-        [SerializeField] public Sprite avatarAssistant;
+        // [SerializeField] public Sprite avatarAssistant;
         [SerializeField] public Image showAvatar;
         [SerializeField] public TextMeshProUGUI content;
 
@@ -16,9 +16,16 @@ namespace ThangChibaGPT
             this.content.text = content;
         }
 
-        public void SetAvatar(string role)
+        public void SetAvatar(Sprite avatar)
         {
-            showAvatar.sprite = role == "user" ? avatarUser : avatarAssistant;
+            if (avatar == null)
+            {
+                showAvatar.sprite = avatarUser;
+            }
+            else
+            {
+                showAvatar.sprite = avatar;
+            }
         }
     }
 }

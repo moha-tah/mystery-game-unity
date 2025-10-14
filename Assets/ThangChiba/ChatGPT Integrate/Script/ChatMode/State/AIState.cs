@@ -6,7 +6,7 @@ namespace ThangChibaGPT
     public class AIState : ChatModeState
     {
         [SerializeField] private GameObject chatLog;
-        private GUIChatController guiChatController;
+        public static GUIChatController guiChatController;
 
         public void Awake()
         {
@@ -25,7 +25,6 @@ namespace ThangChibaGPT
 
         public override void SubmitChat(string content)
         {
-            Debug.Log("SubmitChat: " + content);
             ChatManager.Instance.ChatGPT.Send(content, guiChatController);
         }
     }

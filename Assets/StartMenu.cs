@@ -22,14 +22,17 @@ public class StartMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quitter le jeu !");
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
     void Update()
-{
-    if (instructionsOverlay.activeSelf && Input.GetKeyDown(KeyCode.Escape))
-        HideInstructions();
-}
+    {
+        if (instructionsOverlay.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+            HideInstructions();
+    }
 
 }

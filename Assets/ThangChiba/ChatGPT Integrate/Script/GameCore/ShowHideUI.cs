@@ -6,8 +6,8 @@ namespace ThangChibaGPT
 {
     public class ShowHideUI : MonoBehaviour
     {
-        [SerializeField] private KeyCode showKey = KeyCode.Return;
-        [SerializeField] private KeyCode hideKey = KeyCode.Escape;
+        // [SerializeField] private KeyCode showKey = KeyCode.Return;
+        // [SerializeField] private KeyCode hideKey = KeyCode.Escape;
         [SerializeField] private GameObject uiContainer;
         [SerializeField] private UnityEvent onShow;
         [SerializeField] private UnityEvent onHide;
@@ -22,8 +22,8 @@ namespace ThangChibaGPT
         // Update is called once per frame
         private void Update()
         {
-            if (Input.GetKeyDown(showKey)) SetActive(true);
-            if (Input.GetKeyDown(hideKey)) SetActive(false);
+            // if (Input.GetKeyDown(showKey)) SetActive(true);
+            // if (Input.GetKeyDown(hideKey)) SetActive(false);
         }
 
         public void SetActive(bool isActive)
