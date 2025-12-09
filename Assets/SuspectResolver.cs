@@ -3,36 +3,47 @@ using UnityEngine.SceneManagement;
 
 public class SuspectResolver : MonoBehaviour
 {
-    [Header("UI Panels")]
+    [Header("Panels")]
     public GameObject suspectOverlay;
-    // win/lose are scenes now — set these names in the Inspector
-    public string winSceneName = "Win";
-    public string loseSceneName = "Lose";
+    public GameObject compliceOverlay;
 
-    [Header("Correct Suspect")]
-    public string correctSuspect = "Henry";  // <-- Le coupable est Henry Collins
+    [Header("Culprits")]
+    public string correctMurderer = "Henry";     // Le meurtrier
+    public string correctAccomplice = "Marcus";  // Le complice
 
+    [Header("Scene Names")]
+    public string winSceneName = "Win";     // Nom exact de ta scène Win
+    public string loseSceneName = "Lose";   // Nom exact de ta scène Lose
+
+    // Étape 1 : Choix du meurtrier
     public void SelectSuspect(string suspectName)
     {
-        if (suspectOverlay) suspectOverlay.SetActive(false);
+        suspectOverlay.SetActive(false);
 
-        if (suspectName == correctSuspect)
+        if (suspectName == correctMurderer)
         {
-            if (!string.IsNullOrEmpty(winSceneName)) SceneManager.LoadScene(winSceneName);
-            else Debug.LogWarning("winSceneName not set on SuspectResolver");
+            // Meurtrier trouvé → afficher overlay des complices
+            compliceOverlay.SetActive(true);
         }
         else
         {
-            if (!string.IsNullOrEmpty(loseSceneName)) SceneManager.LoadScene(loseSceneName);
-            else Debug.LogWarning("loseSceneName not set on SuspectResolver");
+            // Mauvais meurtrier → charger LoseScene
+            SceneManager.LoadScene(loseSceneName);
         }
     }
 
-    // Hook this to the 3 wrong buttons (no parameter)
-    public void SelectWrongSuspect()
+    // Étape 2 : Choix du complice
+    public void SelectAccomplice(string compliceName)
     {
-        if (suspectOverlay) suspectOverlay.SetActive(false);
-        if (!string.IsNullOrEmpty(loseSceneName)) SceneManager.LoadScene(loseSceneName);
-        else Debug.LogWarning("loseSceneName not set on SuspectResolver");
+        compliceOverlay.SetActive(false);
+
+        if (compliceName == correctAccomplice)
+        {
+            SceneManager.LoadScene(winSceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene(loseSceneName);
+        }
     }
 }
